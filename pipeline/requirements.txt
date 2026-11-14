@@ -1,0 +1,8 @@
+asf_search>=8.0
+h5py>=3.10
+fsspec>=2024.2
+aiohttp>=3.9
+requests>=2.31
+numpy>=1.26
+pyproj>=3.6
+Pillow>=10.0

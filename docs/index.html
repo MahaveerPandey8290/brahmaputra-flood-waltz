@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brahmaputra Flood Waltz</title>
+<meta name="description" content="Interactive map of 2026 monsoon flooding on the Brahmaputra floodplain, Assam, from NISAR L-band radar backscatter.">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Brahmaputra Flood Waltz</h1>
+    <p class="sub">Watching the 2026 monsoon spread and drain across Assam with NISAR L-band radar</p>
+  </div>
+  <button id="aboutBtn" class="ghost">About &amp; data</button>
+</header>
+
+<main class="layout">
+  <section class="mapwrap">
+    <div id="map"></div>
+    <div id="swipe" class="swipe hidden"><div class="handle"></div></div>
+    <div class="legend" id="legend"></div>
+    <div id="status" class="status">Loading NISAR layers…</div>
+  </section>
+
+  <aside class="panel">
+    <div class="block">
+      <label class="lab">Mode</label>
+      <div class="seg" id="modeSeg">
+        <button data-mode="explore" class="on">Timeline</button>
+        <button data-mode="compare">Before / after</button>
+        <button data-mode="frequency">Flood frequency</button>
+      </div>
+    </div>
+
+    <div class="block" id="layerBlock">
+      <label class="lab">Radar layer</label>
+      <div class="seg" id="layerSeg">
+        <button data-layer="water" class="on">Water</button>
+        <button data-layer="change">Change</button>
+        <button data-layer="rgb">False colour</button>
+        <button data-layer="hh">HH backscatter</button>
+      </div>
+    </div>
+
+    <div class="block" id="timeBlock">
+      <label class="lab">Date <span id="dateLabel" class="val"></span></label>
+      <div class="row">
+        <button id="playBtn" class="icon" aria-label="Play">▶</button>
+        <input type="range" id="dateSlider" min="0" max="0" value="0">
+      </div>
+    </div>
+
+    <div class="block hidden" id="compareBlock">
+      <label class="lab">Left (before)</label>
+      <select id="leftSel"></select>
+      <label class="lab">Right (after)</label>
+      <select id="rightSel"></select>
+      <p class="hint">Drag the white line on the map to swipe between dates.</p>
+    </div>
+
+    <div class="block">
+      <label class="lab">Opacity <span id="opLabel" class="val">85%</span></label>
+      <input type="range" id="opacity" min="0" max="100" value="85">
+      <label class="lab">Basemap</label>
+      <div class="seg" id="baseSeg">
+        <button data-base="imagery" class="on">Optical imagery</button>
+        <button data-base="streets">Streets</button>
+      </div>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="block">
+      <label class="lab">Flooded area through the season</label>
+      <div class="chartbox"><canvas id="chart"></canvas></div>
+    </div>
+
+    <div class="block story" id="story"></div>
+  </aside>
+</main>
+
+<dialog id="about">
+  <form method="dialog"><button class="close" aria-label="Close">✕</button></form>
+  <h2>How this works</h2>
+  <p>NISAR's L-band radar sends microwave pulses that pass through clouds and work day and night, which matters in a monsoon when optical satellites see only cloud. Calm water acts like a mirror and bounces the pulse away from the satellite, so flooded land turns <b>very dark</b> in HH (horizontal send / horizontal receive) backscatter. Rice paddies, forest and towns stay bright, and the cross-polarised HV channel helps separate vegetation from bare wet soil.</p>
+  <p>For each NISAR pass, the pipeline reads the L2 GCOV backscatter over the study area, converts it to decibels and applies one water threshold to every date, set at the valley between the dark water peak and the brighter land values in the HH histogram. It then counts flooded area, compares each date with the first pass of the season and builds a map of how often each pixel was under water.</p>
+  <h3>Data</h3>
+  <ul id="dataList"></ul>
+  <h3>Limits</h3>
+  <p>Wind-roughened water and flooded vegetation can look bright and be missed. Very smooth sand bars and radar shadow can look dark and be falsely labelled as water. Treat the numbers as estimates, not official flood statistics.</p>
+  <p class="hint">Open source: see the project repository for code and instructions.</p>
+</dialog>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="vendor/chartjs/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+{
+ "study_area": "Brahmaputra floodplain, central Assam, India",
+ "bbox": [
+  93.0,
+  26.3,
+  94.6,
+  27.2
+ ],
+ "bounds": [
+  [
+   26.3,
+   93.0
+  ],
+  [
+   27.2,
+   94.6
+  ]
+ ],
+ "threshold_db": -17.25,
+ "pixel_deg": 0.001,
+ "baseline": "20260625",
+ "dates": [
+  {
+   "date": "2026-06-25",
+   "id": "20260625",
+   "granules": [
+    "NISAR_L2_PR_GCOV_023_163_D_075_4005_DHDH_A_20260625T122531_20260625T122606_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 1076.0,
+   "new_water_km2": 0.0,
+   "receded_km2": 0.0,
+   "mean_hh_db": -8.66,
+   "mean_hv_db": -14.24
+  },
+  {
+   "date": "2026-07-07",
+   "id": "20260707",
+   "granules": [
+    "NISAR_L2_PR_GCOV_024_163_D_075_2005_QPDH_A_20260707T122530_20260707T122605_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 0.959,
+   "water_km2": 827.9,
+   "new_water_km2": 98.4,
+   "receded_km2": 346.4,
+   "mean_hh_db": -8.44,
+   "mean_hv_db": -14.35
+  },
+  {
+   "date": "2026-07-19",
+   "id": "20260719",
+   "granules": [
+    "NISAR_L2_PR_GCOV_025_163_D_075_4005_DHDH_A_20260719T122530_20260719T122604_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 939.2,
+   "new_water_km2": 144.3,
+   "receded_km2": 281.1,
+   "mean_hh_db": -8.09,
+   "mean_hv_db": -14.09
+  },
+  {
+   "date": "2026-08-12",
+   "id": "20260812",
+   "granules": [
+    "NISAR_L2_PR_GCOV_027_163_D_075_4005_DHDH_A_20260812T122528_20260812T122603_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 875.9,
+   "new_water_km2": 106.1,
+   "receded_km2": 306.2,
+   "mean_hh_db": -8.1,
+   "mean_hv_db": -14.45
+  },
+  {
+   "date": "2026-08-24",
+   "id": "20260824",
+   "granules": [
+    "NISAR_L2_PR_GCOV_028_163_D_075_2005_QPDH_A_20260824T122528_20260824T122602_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 0.959,
+   "water_km2": 897.9,
+   "new_water_km2": 124.5,
+   "receded_km2": 302.6,
+   "mean_hh_db": -8.25,
+   "mean_hv_db": -13.34
+  },
+  {
+   "date": "2026-09-05",
+   "id": "20260905",
+   "granules": [
+    "NISAR_L2_PR_GCOV_029_163_D_075_4005_DHDH_A_20260905T122527_20260905T122602_P05023_N_F_J_002.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 892.3,
+   "new_water_km2": 37.5,
+   "receded_km2": 221.1,
+   "mean_hh_db": -7.74,
+   "mean_hv_db": -14.21
+  },
+  {
+   "date": "2026-09-17",
+   "id": "20260917",
+   "granules": [
+    "NISAR_L2_PR_GCOV_030_163_D_075_2005_QPDH_A_20260917T122527_20260917T122602_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 0.961,
+   "water_km2": 777.4,
+   "new_water_km2": 67.0,
+   "receded_km2": 365.6,
+   "mean_hh_db": -7.26,
+   "mean_hv_db": -14.04
+  },
+  {
+   "date": "2026-09-29",
+   "id": "20260929",
+   "granules": [
+    "NISAR_L2_PR_GCOV_031_163_D_075_4005_DHDH_A_20260929T122527_20260929T122602_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 596.9,
+   "new_water_km2": 12.0,
+   "receded_km2": 491.1,
+   "mean_hh_db": -7.2,
+   "mean_hv_db": -13.89
+  },
+  {
+   "date": "2026-10-11",
+   "id": "20261011",
+   "granules": [
+    "NISAR_L2_PR_GCOV_032_163_D_075_2005_QPDH_A_20261011T122527_20261011T122602_P05023_N_F_J_001.h5"
+   ],
+   "coverage": 0.962,
+   "water_km2": 499.9,
+   "new_water_km2": 32.3,
+   "receded_km2": 608.3,
+   "mean_hh_db": -6.93,
+   "mean_hv_db": -13.74
+  },
+  {
+   "date": "2026-10-23",
+   "id": "20261023",
+   "granules": [
+    "NISAR_L2_PR_GCOV_033_163_D_075_4005_DHDH_A_20261023T122528_20261023T122602_P05036_N_F_J_001.h5"
+   ],
+   "coverage": 1.0,
+   "water_km2": 378.1,
+   "new_water_km2": 10.5,
+   "receded_km2": 708.4,
+   "mean_hh_db": -7.69,
+   "mean_hv_db": -14.03
+  }
+ ],
+ "summary": {
+  "permanent_water_km2": 253.6,
+  "ever_flooded_km2": 1391.3,
+  "seasonal_only_km2": 1137.7,
+  "common_area_km2": 15254.8,
+  "peak_date": "2026-06-25",
+  "peak_water_km2": 1076.0
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "study_area": "Brahmaputra floodplain, central Assam, India",
+  "bbox": [
+    93.0,
+    26.3,
+    94.6,
+    27.2
+  ],
+  "start": "2026-06-17T00:00:00Z",
+  "end": "2026-10-31T23:59:59Z",
+  "frequency": "frequencyA",
+  "pixel_deg": 0.001,
+  "water_threshold_db": null,
+  "max_dates": 12,
+  "track": "163",
+  "direction": "D",
+  "frame": "075"
+}
